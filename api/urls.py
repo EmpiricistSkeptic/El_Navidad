@@ -16,6 +16,8 @@ urlpatterns = [
     path("story/init/", StoryInitView.as_view(), name="story-init"),
     path("story/today/", TodayDialogueStartView.as_view(), name="story-today"),
     path("story/answer/", AnswerView.as_view(), name="story-answer"),
+
+    path("login/", views.LoginAPIView.as_view(), name="token_obtain_pair"),
 ]
 
 urlpatterns += router.urls
