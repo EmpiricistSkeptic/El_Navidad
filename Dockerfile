@@ -18,4 +18,4 @@ RUN pip install --upgrade pip --root-user-action=ignore \
 
 COPY . .
 
-CMD ["gunicorn", "project.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "start.sh"]
