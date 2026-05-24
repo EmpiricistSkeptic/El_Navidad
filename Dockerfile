@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED=1
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
     build-essential \
-    libpq-div \
+    libpq-dev \
  && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /srv/elnavidad

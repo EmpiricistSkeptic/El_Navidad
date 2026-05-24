@@ -1,0 +1,735 @@
+[
+  {
+    "code": "d0_start",
+    "day_index": 0,
+    "order": 1,
+    "speaker": "cat",
+    "text": "Oh… espera… ¿eres tú? 👀\n¿Eres Pilar?",
+    "options": [
+      { "text": "Sí, soy yo.", "next_node_code": "d0_yes" },
+      { "text": "¿Quién pregunta?", "next_node_code": "d0_who" }
+    ]
+  },
+  {
+    "code": "d0_yes",
+    "day_index": 0,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Lo sabía. 😼\nMe dijeron que iba a llegar por aquí una chica con una sonrisa bonita y ojos curiosos.\nEncaja bastante contigo, ¿sabes?",
+    "options": [
+      { "text": "-->", "next_node_code": "d0_welcome" }
+    ]
+  },
+  {
+    "code": "d0_who",
+    "day_index": 0,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Vaya, qué seria… 😼\nSoy solo un gato con demasiado cacao caliente y una misión importante.\nBut por tu cara, diría que eres Pilar.\nY si no lo eres… bueno… entonces estás usando su contraseña secreta. 👀",
+    "options": [
+      { "text": "-->", "next_node_code": "d0_welcome" }
+    ]
+  },
+  {
+    "code": "d0_welcome",
+    "day_index": 0,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Bienvenida a este pequeño rincón del mundo.\nAquí afuera hace frío, pero adentro siempre hay luz, música suave y una manta invisible que aparece cada vez que te sientes cansada.",
+    "options": [
+      { "text": "Спасибо, Кот (Gracias, Gato)", "next_node_code": "d0_knowledge" }
+    ]
+  },
+  {
+    "code": "d0_knowledge",
+    "day_index": 0,
+    "order": 5,
+    "speaker": "cat",
+    "text": "Ah, por cierto…\nNo te asustes, pero yo sé algunas cosas sobre ti.\nPor ejemplo, sé que te gusta la naturaleza, que puedes pasarte horas mirando el cielo…\ny que a veces te olvidas hasta de comer 🙀.",
+    "options": [
+      { "text": "Eso no es verdad 😼", "next_node_code": "d0_guide" },
+      { "text": "Bueno… tal vez un poco.", "next_node_code": "d0_guide" }
+    ]
+  },
+  {
+    "code": "d0_guide",
+    "day_index": 0,
+    "order": 6,
+    "speaker": "cat",
+    "text": "Tranquila, no estoy aquí para regañarte.\nEstoy aquí para acompañarte.\nSoy como una mezcla de guía turístico, gato psicólogo y guardián de las estrellas… algo así. ✨",
+    "options": [
+      { "text": "Interesante...", "next_node_code": "d0_sender" }
+    ]
+  },
+  {
+    "code": "d0_sender",
+    "day_index": 0,
+    "order": 7,
+    "speaker": "cat",
+    "text": "Alguien me pidió que cuidara de este lugar para ti.\nNo puedo decirte quién es… las reglas mágicas son muy estrictas.\nSolo puedo decir que piensa mucho en ti y que se toma muy en serio eso de hacerte sonreír. 😏",
+    "options": [
+      { "text": "¿Alguien? ¿Quién? 👀", "next_node_code": "d0_mystery" },
+      { "text": "Suena sospechoso…", "next_node_code": "d0_mystery" }
+    ]
+  },
+  {
+    "code": "d0_mystery",
+    "day_index": 0,
+    "order": 8,
+    "speaker": "cat",
+    "text": "No puedo decir nombres… aún.\nPero si miras bien las estrellas, vas a reconocer su forma de pensar en algunas palabras.\nÉl dice que tú entiendes incluso cuando él se complica un poco. 😼",
+    "options": [
+      { "text": "Hmm...", "next_node_code": "d0_look_up" }
+    ]
+  },
+  {
+    "code": "d0_look_up",
+    "day_index": 0,
+    "order": 9,
+    "speaker": "cat",
+    "text": "Mira arriba.\n¿Ves esa primera estrella que brilla un poquito más que las otras? ⭐\nEs la primera que colgamos solo para ti.\nCada estrella guarda un trocito de algo que él siente, y mi trabajo es ayudarte a encontrarlas una por una.",
+    "options": [
+      { "text": "La veo (Я её вижу)", "next_node_code": "d0_final" }
+    ]
+  },
+  {
+    "code": "d0_final",
+    "day_index": 0,
+    "order": 10,
+    "speaker": "cat",
+    "text": "Hoy solo quiero que hagas una cosa:\nrespira hondo, aunque el día haya sido raro o pesado, y abre esa primera estrella.\nEl resto lo hará ella… y las palabras que te esperan ahí dentro.",
+    "options": [
+      { "text": "Abrir la primera estrella ✨", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d1_start",
+    "day_index": 1,
+    "order": 1,
+    "speaker": "cat",
+    "text": "Ah, mira quién volvió… 😼\nPensé que después de un día conmigo ya te habrías escapado a otro cuento.",
+    "options": [
+      { "text": "No me libro de ti tan fácil. 😏", "next_node_code": "d1_attitude" },
+      { "text": "Dudé un poco… pero aquí estoy.", "next_node_code": "d1_doubt" }
+    ]
+  },
+  {
+    "code": "d1_attitude",
+    "day_index": 1,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Me gusta tu actitud.\nEso de quedarte aunque el gato habla demasiado… es una buena señal. 😼",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_question" }
+    ]
+  },
+  {
+    "code": "d1_doubt",
+    "day_index": 1,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Lo sé, a veces la vida canса,\ny luego aparece un gato mágico muy dramático a hablar de estrellas…\npero aun así elegiste volver.\nEso dice mucho de ti, ¿sabes?",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_question" }
+    ]
+  },
+  {
+    "code": "d1_question",
+    "day_index": 1,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Ayer te di la bienvenida.\nHoy quiero hacerte una pregunta importante:\n\n¿Cómo llegas hoy hasta aquí?",
+    "options": [
+      { "text": "Cansada, pero aquí estoy.", "next_node_code": "d1_tired" },
+      { "text": "Un poco mejor que ayer.", "next_node_code": "d1_better" },
+      { "text": "Hecho una pelota de nervios, pero sobreviviendo. 😅", "next_node_code": "d1_nervous" }
+    ]
+  },
+  {
+    "code": "d1_tired",
+    "day_index": 1,
+    "order": 5,
+    "speaker": "cat",
+    "text": "Entonces eres más fuerte de lo que crees.\nLa gente se fija en los días en los que brillamos,\npero pocos ven lo valioso que es simplemente aparecer cuando estás cansada.",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_secret" }
+    ]
+  },
+  {
+    "code": "d1_better",
+    "day_index": 1,
+    "order": 6,
+    "speaker": "cat",
+    "text": "Eso ya es una pequeña victoria, ¿no crees?\nA veces “un poco mejor” es más que suficiente para seguir avanzando.",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_secret" }
+    ]
+  },
+  {
+    "code": "d1_nervous",
+    "day_index": 1,
+    "order": 7,
+    "speaker": "cat",
+    "text": "Entonces este tejado es perfecto para ti.\nA las pelotas de nervios les va bien mirar el cielo un rato\ny recordar que no todo tiene que resolverse hoy.",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_secret" }
+    ]
+  },
+  {
+    "code": "d1_secret",
+    "day_index": 1,
+    "order": 8,
+    "speaker": "cat",
+    "text": "Te diré un secreto:\nquien te envió aquí no esperaba que fueras perfecta,\nsolo esperaba que siguieras siendo tú.\nCon dudas, con miedos, con días raros… pero tú.",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_hint" }
+    ]
+  },
+  {
+    "code": "d1_hint",
+    "day_index": 1,
+    "order": 9,
+    "speaker": "cat",
+    "text": "Dice que le gusta cómo miras el mundo,\nincluso cuando tú solo ves cansancio.\nY que, aunque no te guste creerlo,\nél ve en ti a alguien valiosa incluso en sus días más caóticos.",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_stars" }
+    ]
+  },
+  {
+    "code": "d1_stars",
+    "day_index": 1,
+    "order": 10,
+    "speaker": "cat",
+    "text": "¿Recuerdas lo que te dije ayer?\nCada estrella guarda una parte de algo que él siente.\nSi juntas todas, no solo tendrás ocho cartas:\ntendrás algo así como una pequeña constelación hecha para ti.",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_joke" }
+    ]
+  },
+  {
+    "code": "d1_joke",
+    "day_index": 1,
+    "order": 11,
+    "speaker": "cat",
+    "text": "Y créeme… no todos los humanos hacen constelaciones.\nAlgunos apenas pueden con un mensaje de “buenos días” sin faltas de ortografía. 😼",
+    "options": [
+      { "text": "-->", "next_node_code": "d1_open_star" }
+    ]
+  },
+  {
+    "code": "d1_open_star",
+    "day_index": 1,
+    "order": 12,
+    "speaker": "cat",
+    "text": "Mira otra vez el cielo.\nCerca de la primera estrella que abriste ayer,\nhay otra que parece tener un brillo un poco impaciente.\n\nEsa es la segunda.\nRespira, date permiso de sentir\ny ábrela sin prisa.",
+    "options": [
+      { "text": "Abrir la segunda estrella ✨", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d2_start",
+    "day_index": 2,
+    "order": 1,
+    "speaker": "cat",
+    "text": "Oh, mira quién volvió otra vez… 😼\nEmpiezo a sospechar que este lugar te gusta un poquito.",
+    "options": [
+      { "text": "Me gusta… и también me da un poco de miedo.", "next_node_code": "d2_fear" },
+      { "text": "Tal vez… es cómodo estar aquí.", "next_node_code": "d2_comfort" }
+    ]
+  },
+  {
+    "code": "d2_fear",
+    "day_index": 2,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Es normal.\nLas cosas importantes casi siempre dan un poco de miedo.\nSi no dieran miedo, cualquiera las cuidaría menos.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_notebook" }
+    ]
+  },
+  {
+    "code": "d2_comfort",
+    "day_index": 2,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Lo cómodo no siempre es malo, ¿sabes?\nA veces el corazón solo necesita un lugar donde pueda bajar la guardia un ratito.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_notebook" }
+    ]
+  },
+  {
+    "code": "d2_notebook",
+    "day_index": 2,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Hoy estaba leyendo esto…\nEs el plan de ese humano del que te hablé.\nTiene muchos tachones, ¿sabes?\n\nParece que al principio quería hacerlo todo perfecto…\ny luego entendió que contigo no se trata de ser perfecto,\nsino de ser sincero.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_trust_question" }
+    ]
+  },
+  {
+    "code": "d2_trust_question",
+    "day_index": 2,
+    "order": 5,
+    "speaker": "cat",
+    "text": "Dime algo, solo entre tú y yo:\n\n¿Cómo te llevas con la confianza?",
+    "options": [
+      { "text": "Confío… pero a veces me asusto.", "next_node_code": "d2_trust_afraid" },
+      { "text": "Me cuesta confiar, aunque quiera.", "next_node_code": "d2_trust_hard" },
+      { "text": "Depende del día. Soy humana. 😅", "next_node_code": "d2_trust_day" }
+    ]
+  },
+  {
+    "code": "d2_trust_afraid",
+    "day_index": 2,
+    "order": 6,
+    "speaker": "cat",
+    "text": "Eso es más valiente de lo que crees.\nConfiar y admitir que te asusta…\nes mucho más honesto que fingir que nada duele.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_human_fear" }
+    ]
+  },
+  {
+    "code": "d2_trust_hard",
+    "day_index": 2,
+    "order": 7,
+    "speaker": "cat",
+    "text": "Después de lo que has vivido,\nsería raro que confiaras fácilmente.\nNadie que haya sido herido deja la puerta abierta de golpe.\nY eso está bien.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_human_fear" }
+    ]
+  },
+  {
+    "code": "d2_trust_day",
+    "day_index": 2,
+    "order": 8,
+    "speaker": "cat",
+    "text": "Entonces eres como el clima del corazón:\na veces sol, a veces lluvia,\npero al final sigues siendo el mismo cielo.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_human_fear" }
+    ]
+  },
+  {
+    "code": "d2_human_fear",
+    "day_index": 2,
+    "order": 9,
+    "speaker": "cat",
+    "text": "Él también tuvo miedo, ¿sabías?\nSe hizo mil preguntas en silencio:\n¿y si la lastimo?, ¿y si la distancia lo complica todo?\n\nPero aun con todo eso, decidió quedarse.\nNo como héroe perfecto,\nsino como un humano que te quiere y quiere aprender contigo.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_contrast" }
+    ]
+  },
+  {
+    "code": "d2_contrast",
+    "day_index": 2,
+    "order": 10,
+    "speaker": "cat",
+    "text": "Sé que has conocido formas de “amor”\nque dolían más de lo que curaban,\ndonde siempre te hacían sentir menos.\n\nEste humano, en cambio,\nno quiere que te sientas pequeña a su lado,\nquiere que te sientas tú.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_stars_meaning" }
+    ]
+  },
+  {
+    "code": "d2_stars_meaning",
+    "day_index": 2,
+    "order": 11,
+    "speaker": "cat",
+    "text": "Las estrellas de este cielo no son promesas vacías.\nCada una guarda un pedacito de cómo él te ve,\nno como “no suficiente”,\nsino como alguien que sigue adelante a pesar de todo.",
+    "options": [
+      { "text": "-->", "next_node_code": "d2_open_star" }
+    ]
+  },
+  {
+    "code": "d2_open_star",
+    "day_index": 2,
+    "order": 12,
+    "speaker": "cat",
+    "text": "Hoy, si te apetece, mira hacia la tercera estrella. ✨\nEstá un poco tímida,\ncomo alguien que quiere hablar pero aún se muerde el labio.\n\nDentro de ella hay algo sobre la confianza\ny sobre dejar de exigirte ser perfecta todo el tiempo.",
+    "options": [
+      { "text": "Abrir la tercera estrella ✨", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d3_start",
+    "day_index": 3,
+    "order": 1,
+    "speaker": "cat",
+    "text": "Hoy traté de medir la distancia entre tú и él…\ny el mapa casi se rompió. 😼\n\nSon muchos kilómetros para un corazón tan pequeño, ¿no crees?",
+    "options": [
+      { "text": "Sí… a veces duele pensar en tanta distancia.", "next_node_code": "d3_distance_hurts" },
+      { "text": "Sí, pero igual siento que está muy cerca.", "next_node_code": "d3_distance_close" },
+      { "text": "Depende del día… a veces se siente lejos, a veces no.", "next_node_code": "d3_distance_day" }
+    ]
+  },
+  {
+    "code": "d3_distance_hurts",
+    "day_index": 3,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Es normal que duela.\nSi no doliera, significaría que no te importa.\nY está muy claro que te importa.",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_compass" }
+    ]
+  },
+  {
+    "code": "d3_distance_close",
+    "day_index": 3,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Claro… porque los mapas no saben nada de corazón.\nEl corazón no tiene kilómetros, solo tiene “importas mucho / importas poco”.\nY tú sabes en qué lado está él. 😉",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_compass" }
+    ]
+  },
+  {
+    "code": "d3_distance_day",
+    "day_index": 3,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Entonces eres honesta.\nNadie aguanta siempre como si la distancia no pesara.\nA veces se hace ligera… y a veces pesa como una mochila llena de piedras.",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_compass" }
+    ]
+  },
+  {
+    "code": "d3_compass",
+    "day_index": 3,
+    "order": 5,
+    "speaker": "cat",
+    "text": "Mira este compás…\nintento que apunte hacia ti, pero se vuelve loco.\n\nSupongo que el corazón de él funciona igual:\nno importa hacia dónde mire, siempre termina girando hacia ti.",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_close_daily" }
+    ]
+  },
+  {
+    "code": "d3_close_daily",
+    "day_index": 3,
+    "order": 6,
+    "speaker": "cat",
+    "text": "¿Sabes qué es lo curioso?\nÉl también siente que tú estás “cerca”.\nCuando estudias, cuando corres entre cabañas,\ncuando dices que estás cansada o que te duele todo…\nél no te ve como una chica lejana,\nte siente como alguien que forma parte de su día.",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_place_question" }
+    ]
+  },
+  {
+    "code": "d3_place_question",
+    "day_index": 3,
+    "order": 7,
+    "speaker": "cat",
+    "text": "Si pudieras elegir un lugar para estar con él ahora mismo,\nsolo uno… ¿qué elegirías?",
+    "options": [
+      { "text": "Algún lugar tranquilo en la naturaleza.", "next_node_code": "d3_place_nature" },
+      { "text": "Una cocina pequeña, para hablar, reír y cocinar juntos.", "next_node_code": "d3_place_kitchen" },
+      { "text": "Simplemente… a su lado, donde sea.", "next_node_code": "d3_place_side" }
+    ]
+  },
+  {
+    "code": "d3_place_nature",
+    "day_index": 3,
+    "order": 8,
+    "speaker": "cat",
+    "text": "Tiene sentido.\nDos personas tranquilas en un lugar tranquilo.\nEs el tipo de escena que hace que el tiempo se olvide de correr.",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_distance_meaning" }
+    ]
+  },
+  {
+    "code": "d3_place_kitchen",
+    "day_index": 3,
+    "order": 9,
+    "speaker": "cat",
+    "text": "Sí, ya lo vi:\ncanciones tontas, comida quemándose un poquito,\ny ustedes riéndose igual.\nSuena muy a ustedes dos. 😼",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_distance_meaning" }
+    ]
+  },
+  {
+    "code": "d3_place_side",
+    "day_index": 3,
+    "order": 10,
+    "speaker": "cat",
+    "text": "Esa es la respuesta de alguien que ya eligió a la persona,\nno al lugar.\nY eso dice mucho más de lo que crees.",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_distance_meaning" }
+    ]
+  },
+  {
+    "code": "d3_distance_meaning",
+    "day_index": 3,
+    "order": 11,
+    "speaker": "cat",
+    "text": "La distancia duele, sí.\nPero también demuestra algo:\nsi a pesar de todos esos kilómetros\nsigues aquí, leyendo esto…\nes porque lo que sientes no es cualquier cosa.",
+    "options": [
+      { "text": "-->", "next_node_code": "d3_open_star" }
+    ]
+  },
+  {
+    "code": "d3_open_star",
+    "day_index": 3,
+    "order": 12,
+    "speaker": "cat",
+    "text": "Hoy la cuarta estrella está brillando un poco diferente.\nNo puede acercarlos físicamente,\npero guarda algo importante:\ncómo él vive contigo en las cosas pequeñas de cada día,\naunque estén lejos.",
+    "options": [
+      { "text": "Abrir la cuarta estrella ✨", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d4_start",
+    "day_index": 4,
+    "order": 1,
+    "speaker": "cat",
+    "text": "¡Ajá! Mira quién llegó.\nJusto estaba revisando mi informe del día:\n“Pilar: nivel de esfuerzo — _ridículamente alto_”.",
+    "options": [
+      { "text": "¿Ridículamente alto? Eso suena sospechoso…", "next_node_code": "d4_2" },
+      { "text": "No exageres, hoy no hice tanto.", "next_node_code": "d4_3" },
+      { "text": "¿Qué dice ese informe exactamente?", "next_node_code": "d4_4" }
+    ]
+  },
+  {
+    "code": "d4_2",
+    "day_index": 4,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Sospechoso no, señorita.\nAquí dice: _“Hizo un test de inglés, lo dio todo, dudó de sí misma… y aun así lo hizo perfecto.”_\n\nInteresante… alguien que cree que no es suficiente… pero sus resultados dicen lo contrario, ¿no?",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d4_final" }
+    ]
+  },
+  {
+    "code": "d4_3",
+    "day_index": 4,
+    "order": 3,
+    "speaker": "cat",
+    "text": "¿No hiciste tanto? A ver… _test de inglés_, _trabajo aunque duela la panza_, _emociones a flor de piel_ y aun así sigues adelante.\nSi eso “no es tanto”, quiero ver tu definición de “mucho”.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d4_final" }
+    ]
+  },
+  {
+    "code": "d4_4",
+    "day_index": 4,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Informe oficial sobre Pilares extraordinarias:\n- Se esfuerza incluso cuando está cansada.\n- Duda mucho de sí misma, pero no deja de intentarlo.\n- Tiene un corazón gigante que a veces la hace sufrir… pero también la hace brillar.\n\nConclusión del informe: _“Este tipo de persona hace que cierto programador ucraniano esté muy orgulloso de ella.”_",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d4_final" }
+    ]
+  },
+  {
+    "code": "d4_final",
+    "day_index": 4,
+    "order": 5,
+    "speaker": "cat",
+    "text": "Por cierto, hoy tengo permiso especial para desbloquear una estrella distinta.\nEs una estrella que no habla de resultados, habla de **todo lo que haces para llegar hasta ellos**.",
+    "options": [
+      { "text": "✨ Ver la estrella de hoy", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d5_start",
+    "day_index": 5,
+    "order": 1,
+    "speaker": "cat",
+    "text": "¡Ey, Pilar!\nHoy vengo con una misión muy seria…\nEstoy haciendo inventario de **momentos “nuestros”**. ¿Me ayudas?",
+    "options": [
+      { "text": "¿Inventario? Eso suena muy oficial 😅", "next_node_code": "d5_2" },
+      { "text": "Depende… ¿qué consideras ‘nuestro’?", "next_node_code": "d5_3" },
+      { "text": "Si hay recuerdos bonitos, sí ayudo.", "next_node_code": "d5_4" }
+    ]
+  },
+  {
+    "code": "d5_2",
+    "day_index": 5,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Claro, esto es muy serio.\nHay cosas como:\n- risas en llamadas tontas,\n- películas vistas a medias,\n- canciones que se quedaron pegadas,\n- y cierto chico que canta “Apathy” solo para una persona.\n\nTodo eso hay que registrarlo, ¿sabes? Son pruebas de que algo especial está pasando.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d5_final" }
+    ]
+  },
+  {
+    "code": "d5_3",
+    "day_index": 5,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Buena pregunta.\nPara mí, “nuestro” es когда algo deja de ser solo **una película**, y se convierte en **“esa película que vimos juntos”**.\nO cuando una canción ya no es solo música, sino **“la canción que él te canta y tú te ríes”**.\nO cuando un bosque en Ucrania deja de ser solo un bosque и se vuelve **“el lugar que te muestran en fotos y sientes cerquita aunque esté lejos”**.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d5_final" }
+    ]
+  },
+  {
+    "code": "d5_4",
+    "day_index": 5,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Oh, créeme, hay varios:\n- el día que se rieron por algo absurdo en medio de una videollamada,\n- los chistes internos que nadie más entendería,\n- las veces que se llamaron cosas raras en broma y aun así sonaba a cariño.\n\nY sí, todo eso cuenta. No hace falta un gran evento dramático para que algo sea importante.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d5_final" }
+    ]
+  },
+  {
+    "code": "d5_final",
+    "day_index": 5,
+    "order": 5,
+    "speaker": "cat",
+    "text": "¿Sabes lo que descubrí? Que a veces no es un gran momento el que une a dos personas, sino muchos pequeños momentos que se repiten.\n\nUna canción,\nun “buenos días”,\nuna broma privada,\nun “descansa, cuídate”.\n\nHoy voy a abrir una estrella que habla justamente de eso: de cómo, sin darnos cuenta, hemos ido creando un pequeño universo solo de ustedes dos.",
+    "options": [
+      { "text": "✨ Abrir la estrella de hoy", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d6_start",
+    "day_index": 6,
+    "order": 1,
+    "speaker": "cat",
+    "text": "Pilar, hoy vengo muy viajero.\nMírame, estoy listo para **planes serios**: tengo maleta, bufanda и… cero dinero, pero muchos sueños. 😼",
+    "options": [
+      { "text": "¿A dónde piensas viajar, gato?", "next_node_code": "d6_2" },
+      { "text": "¿También los gatos hacen planes?", "next_node_code": "d6_3" },
+      { "text": "Suena peligroso eso de ‘planes serios’ 😅", "next_node_code": "d6_4" }
+    ]
+  },
+  {
+    "code": "d6_2",
+    "day_index": 6,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Bueno, digamos que hay **dos puntos en el mapa** que no dejan de mirarse:\n\nuno está lleno de nieve y bosques,\nel otro de montañas и calor.\n\nY en medio, hay un montón de kilómetros и dos personas pensando: “Algún día…”",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d6_final" }
+    ]
+  },
+  {
+    "code": "d6_3",
+    "day_index": 6,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Claro. Algunos gatos planean cazar ratones, otros planean dormir 18 horas al día…\nY otros, como yo, se encargan de **guardar los deseos** de personas que no se atreven a decirlos en voz alta.\nYo escucho cuando piensas: “Quisiera verlo”, “me gustaría abrazarlo al menos una vez”, “ojalá podamos estar en el mismo lugar algún día”.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d6_final" }
+    ]
+  },
+  {
+    "code": "d6_4",
+    "day_index": 6,
+    "order": 4,
+    "speaker": "cat",
+    "text": "No te preocupes, nadie va a obligarte a casarte conmigo… todavía. 😼\n\nCon “planes serios” me refiero a cosas como:\n- soñar con ver una película juntos **en el mismo sillón**,\n- imaginar cómo sería un abrazo después de un día difícil,\n- desear que un día “buenos días” no sea un mensaje, sino una mirada medio dormida, cara a cara.\n\nNo suena tan peligroso, ¿no?",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d6_final" }
+    ]
+  },
+  {
+    "code": "d6_final",
+    "day_index": 6,
+    "order": 5,
+    "speaker": "cat",
+    "text": "A veces da miedo pensar en el futuro, sobre todo когда hay distancia, guerra, problemas, и tantas cosas que no controlamos.\n\nPero también es bonito когда el futuro no es una promesa vacía, sino un **deseo honesto**:\n“No sé cuándo, ni cómo exactamente, pero quiero que haya un lugar para ti en lo que viene”.\n\nHoy voy a abrir una estrella que habla justamente de eso: de cómo él ve ese “después” sin presionarte, sin prometer imposibles, pero sin esconder lo que quiere.",
+    "options": [
+      { "text": "✨ Abrir la estrella de hoy", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d7_start",
+    "day_index": 7,
+    "order": 1,
+    "speaker": "cat",
+    "text": "Hoy el mundo está lleno de ruido: cohetes, música, gente gritando “¡feliz año!”.\n\nPero tú и yo sabemos que lo más importante no es el ruido, sino **lo que uno siente en silencio** когда mira el cielo y piensa: “¿Cómo será lo que viene?”.",
+    "options": [
+      { "text": "A veces el futuro me da un poco de miedo…", "next_node_code": "d7_2" },
+      { "text": "Solo quiero que pase el tiempo и ver qué pasa con nosotros.", "next_node_code": "d7_3" },
+      { "text": "Ojalá pudiéramos contar juntos los segundos hasta medianoche.", "next_node_code": "d7_4" }
+    ]
+  },
+  {
+    "code": "d7_2",
+    "day_index": 7,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Es normal. El futuro da miedo porque no tiene subtítulos ni spoilers.\n\nPero te voy a decir un secreto: él también tiene un poco de miedo. De cruzarse contigo и que digas: “¿Ves? Al final no fue tan terrible”. 😼\n\nLo importante no es no tener miedo, sino no dejar que ese miedo decida por ti.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d7_final" }
+    ]
+  },
+  {
+    "code": "d7_3",
+    "day_index": 7,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Eso, pequeña humana, ya es una forma de decisión.\n\nNo estás huyendo, no estás cerrando la puerta, no estás diciendo “no quiero nada”.\nEstás diciendo: “Quiero ver qué somos, quiero conocerte mejor, quiero que el tiempo nos muestre si esto tiene raíces fuertes”.\n\nEso es mucho más maduro que prometer un “para siempre” vacío.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d7_final" }
+    ]
+  },
+  {
+    "code": "d7_4",
+    "day_index": 7,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Él también lo piensa, aunque no lo diga así de dramático как tú. 😼\n\nPero mientras tanto, hay otras formas de contar juntos:\n- когда miran la misma película и se ríen de la misma escena,\n- когда se mandan un audio al final de un día difícil,\n- когда uno escribe “descansa” и el otro, sin verlo, sonríe un poquito más tranquilo.\n\nNo están en la misma habitación, pero sí en el mismo lado de la historia.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d7_final" }
+    ]
+  },
+  {
+    "code": "d7_final",
+    "day_index": 7,
+    "order": 5,
+    "speaker": "cat",
+    "text": "Hoy todos cuentan segundos. Pero tú и él han estado contando algo más fino:\n- mensajes,\n- llamadas,\n- pequeños pasos,\n- conversaciones difíciles,\n- miedos compartidos,\n- risas absurdas.\n\nEso también es una forma de esperar.\n\nHay esperas vacías и hay esperas llenas de sentido. La tuya, créeme, no está vacía.\n\nLa estrella de hoy habla justamente de eso: de cómo él vive esta espera, sin presionarte, sin exigirte respuestas, pero sin esconder que **sí te espera a su manera**.",
+    "options": [
+      { "text": "✨ Abrir la estrella de hoy", "next_node_code": null, "is_end": true }
+    ]
+  },
+  {
+    "code": "d8_start",
+    "day_index": 8,
+    "order": 1,
+    "speaker": "cat",
+    "text": "Entonces… sobrevivimos a otro año, ¿eh? 😼\n\nHubo ruido, abrazos, mensajes, и, en medio de todo eso, en algún momento tú entraste aquí, en esta pequeña esquina de estrellas.\n\nY aunque todo esto parezca un juego, para mí no lo fue: fue una forma distinta de decirte: “**Él está aquí. Pensando en ti. Empezando el año contigo en la mente.**”",
+    "options": [
+      { "text": "Se siente raro, pero bonito, empezar el año contigo и con él así.", "next_node_code": "d8_2" },
+      { "text": "A veces me da miedo ilusionarme, но también me da miedo no hacerlo.", "next_node_code": "d8_3" },
+      { "text": "Solo quiero que estemos bien, pase lo que pase con la distancia.", "next_node_code": "d8_4" }
+    ]
+  },
+  {
+    "code": "d8_2",
+    "day_index": 8,
+    "order": 2,
+    "speaker": "cat",
+    "text": "Las cosas importantes casi siempre se sienten un poco raras al principio.\n\nPero si es bonito и no duele, si te trae paz en vez de ansiedad, quizás es porque estás exactamente donde deberías estar hoy.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d8_final" }
+    ]
+  },
+  {
+    "code": "d8_3",
+    "day_index": 8,
+    "order": 3,
+    "speaker": "cat",
+    "text": "Claro que da miedo. Ilusionarse es как caminar sin paraguas sabiendo que puede llover.\n\nPero también sabes esto: tú ya has sobrevivido a tormentas mucho peores que un poco de lluvia.\n\nNo se trata de ilusionarse sin pensar, sino de dejarse sentir sin dejar de cuidarse.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d8_final" }
+    ]
+  },
+  {
+    "code": "d8_4",
+    "day_index": 8,
+    "order": 4,
+    "speaker": "cat",
+    "text": "Ese es, quizás, el deseo más sincero и más difícil:\n\n“Que estemos bien, aunque no todo sea perfecto.”\n\nY él piensa igual más de lo que imaginas. No quiere tener razón, no quiere ganar, no quiere una historia de película.\n\nQuiere que tú estés bien и que, si es posible, ese “bien” siga teniendo su nombre dentro.",
+    "options": [
+      { "text": "Continuar", "next_node_code": "d8_final" }
+    ]
+  },
+  {
+    "code": "d8_final",
+    "day_index": 8,
+    "order": 5,
+    "speaker": "cat",
+    "text": "Durante estos días te he traído mensajes, recuerdos, miedos dichos en voz baja, и cosas que él nunca te diría tan directamente por chat.\n\nPero creo que, por ahora, mi misión está cumplida.\n\nLas estrellas que dejé aquí no van a desaparecer: puedes volver cuando quieras, releer, reírte de mis maullidos, o simplemente recordar que hubo un fin de año en el que no estabas sola con tus pensamientos.\n\nAhora, la última estrella no habla solo de lo que siente él, sino de **lo que ustedes dos ya son**, aunque no tenga nombre aún.",
+    "options": [
+      { "text": "✨ Abrir la última estrella del año", "next_node_code": null, "is_end": true }
+    ]
+  }
+]

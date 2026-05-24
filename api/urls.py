@@ -3,7 +3,8 @@ from .views import (
     StoryInitView,
     TodayDialogueStartView,
     AnswerView,
-    LetterViewSet
+    LetterViewSet,
+    LoginAPIView,
 )
 
 from rest_framework.routers import DefaultRouter
@@ -17,7 +18,7 @@ urlpatterns = [
     path("story/today/", TodayDialogueStartView.as_view(), name="story-today"),
     path("story/answer/", AnswerView.as_view(), name="story-answer"),
 
-    path("login/", views.LoginAPIView.as_view(), name="token_obtain_pair"),
+    path("login/", LoginAPIView.as_view(), name="token_obtain_pair"),
 ]
 
 urlpatterns += router.urls

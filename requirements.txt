@@ -109,7 +109,6 @@ sympy==1.14.0
 terminado==0.18.1
 threadpoolctl==3.6.0
 tinycss2==1.4.0
-torch==2.9.0+cpu
 tornado==6.5.2
 traitlets==5.14.3
 typing_extensions==4.15.0
@@ -120,3 +119,11 @@ wcwidth==0.2.14
 webcolors==25.10.0
 webencodings==0.5.1
 websocket-client==1.9.0
+django
+djangorestframework
+djangorestframework-simplejwt
+psycopg2-binary
+django-redis
+gunicorn
+drf_spectacular
+django-cors-headers
