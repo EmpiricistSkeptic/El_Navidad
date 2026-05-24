@@ -1,4 +1,5 @@
 import json
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -179,6 +180,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument("--dialogues", type=str, required=True, help="Путь к dialogues.json")
         parser.add_argument("--letters", type=str, required=True, help="Путь к letters.json")
+        parser.add_argument("--create-user", action="store_true", help="Создать пользователя из env переменных")
         parser.add_argument(
             "--reset-options",
             action="store_true",
@@ -312,6 +314,24 @@ class Command(BaseCommand):
                             is_end=opt_in.is_end,
                         )
                         options_created += 1
+            
+            if opts["create_user"]:
+                from django.contrib.auth import get_user_model
+                User = get_user_model()
+                
+                username = os.environ.get("APP_USER_USERNAME")
+                password = os.environ.get("APP_USER_PASSWORD")
+                
+                if not username or not password:
+                    self.stdout.write(self.style.WARNING("APP_USER_USERNAME или APP_USER_PASSWORD не заданы — пропускаем создание пользователя"))
+                else:
+                    user, created = User.objects.get_or_create(username=username)
+                    if created:
+                        user.set_password(password)
+                        user.save()
+                        self.stdout.write(self.style.SUCCESS(f"Пользователь '{username}' создан ✅"))
+                    else:
+                        self.stdout.write(self.style.NOTICE(f"Пользователь '{username}' уже существует — пропускаем"))
 
         self.stdout.write(self.style.SUCCESS("Импорт завершён ✅"))
         self.stdout.write(

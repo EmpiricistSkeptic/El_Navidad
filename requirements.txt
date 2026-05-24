@@ -127,3 +127,4 @@ django-redis
 gunicorn
 drf_spectacular
 django-cors-headers
+dj-database-url

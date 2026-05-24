@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from datetime import timedelta
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -125,32 +126,39 @@ WSGI_APPLICATION = "project.wsgi.application"
 # ==============================================================================
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "HOST": os.getenv("POSTGRES_HOST", "db"), # "db" — это имя сервиса в docker-compose
-        "PORT": os.getenv("POSTGRES_PORT", "5432"),
-        "NAME": os.getenv("POSTGRES_DB", "postgres"),
-        "USER": os.getenv("POSTGRES_USER", "postgres"),
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "postgres"),
-    }
-}
 
+#DATABASES = {
+    #"default": {
+        #"ENGINE": "django.db.backends.postgresql",
+        #"HOST": os.getenv("POSTGRES_HOST", "db"), # "db" — это имя сервиса в docker-compose
+        #"PORT": os.getenv("POSTGRES_PORT", "5432"),
+        #"NAME": os.getenv("POSTGRES_DB", "postgres"),
+        #"USER": os.getenv("POSTGRES_USER", "postgres"),
+        #"PASSWORD": os.getenv("POSTGRES_PASSWORD", "postgres"),
+    #}
+#}
+
+DATABASES = {
+    "default": dj_database_url.config(
+        default=os.getenv("DATABASE_URL"),
+        conn_max_age=600,
+    )
+}
 
 # ==============================================================================
 # REDIS / CACHE
 # ==============================================================================
 # Для работы этого блока нужно установить: pip install django-redis
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": os.getenv("REDIS_URL", "redis://redis:6379/1"),
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
+#CACHES = {
+    #"default": {
+        #"BACKEND": "django_redis.cache.RedisCache",
+        #"LOCATION": os.getenv("REDIS_URL", "redis://redis:6379/1"),
+        #"OPTIONS": {
+            #"CLIENT_CLASS": "django_redis.client.DefaultClient",
+        #}
+    #}
+#}
 
 
 # ==============================================================================
@@ -211,3 +219,5 @@ MEDIA_ROOT = BASE_DIR / "media"
 # ==============================================================================
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
