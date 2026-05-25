@@ -18,4 +18,4 @@ RUN pip install --upgrade pip --root-user-action=ignore \
 
 COPY . .
 
-CMD ["gunicorn", "start.sh"]
+CMD ["sh", "start.sh"]
