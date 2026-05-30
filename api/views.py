@@ -207,17 +207,8 @@ class LetterViewSet(ReadOnlyModelViewSet):
     # ВАЖНО для роутера (чтобы day_index был числом и в schema выглядел как int)
     lookup_value_regex = r"\d+"
 
-    def list(self, request, *args, **kwargs):
-        today = get_current_day_index()
-        self.queryset = self.queryset.filter(day_index__lte=today)
-        return super().list(request, *args, **kwargs)
-
     def retrieve(self, request, *args, **kwargs):
-        today = get_current_day_index()
         day_index = int(kwargs.get("day_index"))
-
-        if day_index > today:
-            raise PermissionDenied("Эта звезда ещё недоступна ✨")
 
         progress, _ = UserDayProgress.objects.get_or_create(user=request.user, day_index=day_index)
         progress.letter_opened = True
