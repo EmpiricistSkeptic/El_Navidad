@@ -68,12 +68,11 @@ class StoryInitView(APIView):
     )
     def get(self, request, *args, **kwargs):
         user = request.user
-        today_index = get_current_day_index()
 
-        progresses = UserDayProgress.objects.filter(user=user, day_index__lte=today_index).order_by("day_index")
+        progresses = UserDayProgress.objects.filter(user=user).order_by("day_index")
         progress_data = UserDayProgressSerializer(progresses, many=True).data
 
-        letters = Letter.objects.filter(day_index__lte=today_index).order_by("day_index")
+        letters = Letter.objects.all().order_by("day_index")
         letters_data = LetterSerializer(letters, many=True).data
 
         return Response({
