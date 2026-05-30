@@ -76,7 +76,7 @@ class StoryInitView(APIView):
         letters_data = LetterSerializer(letters, many=True).data
 
         return Response({
-            "today_day_index": today_index,
+            "today_day_index": 8,
             "progress": progress_data,
             "letters": letters_data,
         })
