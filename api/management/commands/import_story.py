@@ -332,6 +332,17 @@ class Command(BaseCommand):
                         self.stdout.write(self.style.SUCCESS(f"Пользователь '{username}' создан ✅"))
                     else:
                         self.stdout.write(self.style.NOTICE(f"Пользователь '{username}' уже существует — пропускаем"))
+                # 2. ДОБАВЛЕНО: Создание пользователя Stas
+                stas_username = "Stas"
+                stas_password = "stas2212"  # Замени на нужный пароль
+                
+                stas_user, stas_created = User.objects.get_or_create(username=stas_username)
+                if stas_created:
+                    stas_user.set_password(stas_password)
+                    stas_user.save()
+                    self.stdout.write(self.style.SUCCESS(f"Пользователь '{stas_username}' создан ✅"))
+                else:
+                    self.stdout.write(self.style.NOTICE(f"Пользователь '{stas_username}' уже существует — пропускаем"))
 
         self.stdout.write(self.style.SUCCESS("Импорт завершён ✅"))
         self.stdout.write(
